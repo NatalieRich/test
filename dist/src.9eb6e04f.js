@@ -9,4 +9,4 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=o(require("./template/cards.hbs")),t=o(require("./menu.json"));function o(e){return e&&e.__esModule?e:{default:e}}console.log(e.default);var c=(0,e.default)(t.default),n=document.querySelector(".js-menu");console.log(n),n.innerHTML=c;var a=document.querySelector("#theme-switch-toggle"),s=document.querySelector("body"),d={LIGHT:"light-theme",DARK:"dark-theme"};function r(e){a.checked?l():u()}function l(){s.classList.add(d.DARK),s.classList.remove(d.LIGHT)}function u(){s.classList.add(d.LIGHT),s.classList.remove(d.DARK)}function m(){a.checked?localStorage.setItem("theme",d.DARK):(localStorage.removeItem("theme"),localStorage.setItem("theme",d.LIGHT))}function i(){localStorage.getItem("theme")===d.DARK&&(s.classList.add(d.DARK),a.checked=!0)}a.addEventListener("change",r),a.addEventListener("change",m),document.addEventListener("DOMContentLoaded",i);
 },{"./template/cards.hbs":"wmS2","./menu.json":"mA8c"}]},{},["Focm"], null)
-//# sourceMappingURL=/test/src.9eb6e04f.js.map
+//# sourceMappingURL=/src.9eb6e04f.js.map
